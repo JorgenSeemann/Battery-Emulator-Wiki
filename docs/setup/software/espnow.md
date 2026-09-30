@@ -2,7 +2,7 @@
 title: "ESPNow"
 ---
 
-## **ESPNow in Battery Emulator context**
+## **ESPNow in Battery Emulator**
 
 Any ESP32 device nearby can display Battery Emulator data without any physical connection to the hardware. The emulator broadcasts (or unicasts) its full telemetry set: emulator-wide state, per-battery values for all three batteries, cell voltages and balancing bits, and the recent event log.
 
@@ -26,7 +26,8 @@ Battery Emulator implements ESPNow v2 in the **ESPNow** integration.
       checked against its published source code.** Once flashed, it has full
       control of the device and of anything you enter into it.
     - **Do not enter your main home Wi-Fi name and password into these
-      displays.** Some of them run open or default-password setup hotspots,
+      displays**, at least not until you compile the binary yourself.
+      Some of them run open or default-password setup hotspots,
       accept firmware updates over the network without any login, or show
       saved credentials on their setup pages. Anyone within radio range
       could then take them over or read your Wi-Fi password.
@@ -43,15 +44,17 @@ Battery Emulator implements ESPNow v2 in the **ESPNow** integration.
 
 The following independently maintained community projects provide ready-to-install ESPNow displays:
 
+- [Battery-Emulator-Esphome](https://github.com/nagyrobi/Battery-Emulator-Esphome) display - touch displays in the look of [sort282-rgb](https://github.com/sort282-rgb/battery-display-esp32-4848s040c), built with ESPHome's LVGL component - many display hardware boards supported.
+
+![image](../../images/espnow-01.png)
+
 - [Battery Display for LILYGO T-Display-S3](https://github.com/sort282-rgb/battery-display-t-display-s3) - a compact five-screen ESPNow v2 dashboard with a [USB web installer](https://sort282-rgb.github.io/battery-display-t-display-s3/), phone-based setup, local web controls, and prebuilt firmware.
 - [Battery Display for ESP32-4848S040C](https://github.com/sort282-rgb/battery-display-esp32-4848s040c) - a 480 x 480 touchscreen ESPNow v2 dashboard with a [USB web installer](https://sort282-rgb.github.io/battery-display-esp32-4848s040c/installer/), phone-based setup, local web controls, and prebuilt firmware.
 
 The main telemetry screens use battery-agnostic ESPNow v2 fields and are not limited to Tesla integrations. The current firmware displays battery 1 and plots up to 96 cells. Tesla-specific HVIL, DTC and BMS controls are available only in Wi-Fi web mode and are not applicable to other battery integrations. Integrations that do not provide cell-voltage telemetry may show unavailable cell values.
 
-![espnow_4848s040c](../../images/espnow_4848s040c.jpg)
-
 !!! note "Payload-size compatibility"
-    The current public firmware builds use an ESPNow receive layer limited to 250-byte payloads. Build Battery Emulator with `ESPNOW_MAX_PAYLOAD=250` for complete cell-voltage telemetry. The ESP32-4848S040C application's packet buffer is already sized to 1470 bytes, but the ESPNow SDK in the published build still limits received payloads to 250 bytes.
+    The current public firmware builds in the **sort282-rgb** repos use an ESPNow receive layer limited to 250-byte payloads. Build Battery Emulator with `ESPNOW_MAX_PAYLOAD=250` for complete cell-voltage telemetry. The ESP32-4848S040C application's packet buffer is already sized to 1470 bytes, but the ESPNow SDK in the published build still limits received payloads to 250 bytes.
 
 - [CYD Battery Emulator Display for ESP32-2432S028R](https://github.com/pauLTU3/CYD-Battery-Emulator) - ESPNow v2 display for the 2.8" Cheap Yellow Display, supports one or two batteries. Includes a [web installer](https://paultu3.github.io/CYD-Battery-Emulator/).
 
