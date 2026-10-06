@@ -10,6 +10,8 @@ The charger connects to the BMS using RS485, and to the DC power cables between 
 
 The manual can be found here: https://github.com/JorgenSeemann/Battery-Emulator-Wiki/blob/main/docs/setup/chargers/V2X%20Bidirectional%20DCDC%20EV%20Charger%20User%20Manual%20V10_260918_123745.pdf
 
+Basic connection: (../../images/UUGP princip connection.jpg)
+
 ## Specs
 
 EV Side DC:
