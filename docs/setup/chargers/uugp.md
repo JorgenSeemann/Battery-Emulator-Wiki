@@ -45,3 +45,23 @@ Environment:
 
 
 The charger is controlled and monitored via RS485, or via it's local Web IO. 
+
+# Setup
+
+| Object | silk-screen | function | PIN |
+|:------:|-------------|----------|-----|
+| A | WIFI/4G antenna | WIFI/4G antenna, built-in WIFI/4G module comes standard with WiFi and Bluetooth (two in one), 4G optional | / |
+| B | DC incoming line | Connect the inverter DC bus input port, default is 2 meters | 3*10mm² |
+| C | COM1 | Unused for communication with inverters based on Modbus RTU protocol (RS485) | 485A:PIN 4<br>485B:PIN 5<br>CANH:PIN 3<br>CANL:PIN 6<br>DSP-485A:PIN 1<br>DSP-485B:PIN 2<br>DSP-IN:PIN 7<br>DSP-GND:PIN 8 |
+| D | COM2 | Used for reservation or merging | 485A:PIN 4<br>485B:PIN 5<br>CANH:PIN 3<br>CANL:PIN 6<br>DSP-485A:PIN 1<br>DSP-485B:PIN 2<br>DSP-IN:PIN 7<br>DSP-GND:PIN 8 |
+| E | RJ45 | RJ45 wired network port | / |
+| F | EV gun line | CCS2 DC Charging Cable | / |
+| G | / | Vent valve | / |
+| H | UI | RJ45 Ethernet port/capture message for retrieving charging logs | Ethernet port |
+| H | APP | USB interface/program upgrade upgrades | USB port |
+| H | SIM | 4G card socket/network connection | Insert 4G card |
+| I | BLACK START | black start button | / |
+| J | Type C | Black start external power bank power supply interface | / |
+| K | Emergency stop button | Emergency stop | / |
+
+![Ports](../../images/UUGP_PD.png)
