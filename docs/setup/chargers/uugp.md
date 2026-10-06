@@ -6,6 +6,8 @@ This page provides details about the 22/25Kw charger from UUGP (UBC22K1000-Y1-CC
 
 The benefit of this charger is that it connects (power) directly to DC, and thus reduce the conversion loss.
 
+The charger connects to the BMS using RS485, and to the DC power cables between the battery and the inverter.
+
 ## Specs
 
 EV Side DC:
