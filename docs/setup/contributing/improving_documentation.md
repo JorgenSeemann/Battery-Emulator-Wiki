@@ -68,7 +68,9 @@ Then click **Create pull request** to send it in:
 
 ## Step 7: Review and merge
 
-The project team admins review the changes you suggested. They may merge them right away, or ask questions or request changes in the comments of the pull request. GitHub notifies you about these by e-mail and under the bell icon :material-bell-outline: on GitHub.
+The project team admins review the changes you suggested. They may merge them right away, or ask questions or request changes in the comments of the pull request. GitHub notifies you about these by e-mail and under the bell icon on GitHub.
+
+If you added images by pasting them into the markdown file, or linked them from third party sites, a dedicated action will take care of importing/converting them into the site's own `images\` subdir, and correct the links appropriately.
 
 Once merged, your changes are published on the live site.
 
