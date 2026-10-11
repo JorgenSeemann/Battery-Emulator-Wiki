@@ -18,11 +18,11 @@ The following vehicles are compatible
 ## Connectors
 
 ## HV connector
-The battery needs to see capacitance on the HV lines in order to engage contactors. Two 470uF capacitors in parallel is confirmed working (1000uF total capacity)
+The battery needs to see capacitance on the HV lines in order to engage contactors. Two 470uF capacitors in parallel is confirmed working (1000uF total capacity).
 
 HV connector (175 A max). This is the easiest one to source and use, while the others are much harder to find. (Has HVIL that needs to be seated!)
 
-![image](../images/stellantis-pro-one-01.png){ width="532" height="504" }
+![image](../images/stellantis-pro-one-01.png)
 
 [aliexpress](https://nl.aliexpress.com/item/1005003639011124.html?spm=a2g0o.order_list.order_list_main.18.252f79d2fTtchH&gatewayAdapt=glo2nld)
 
