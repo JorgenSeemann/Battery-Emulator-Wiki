@@ -90,6 +90,18 @@ This is your fork, with the changes in your unique branch! To change a file agai
 
 This will save the changes in your already existing branch, and will update the pull request with your additional changes.
 
+!!! tip "TIP"
+    For a file that's already part of the pull request there's a shortcut: on the **Files changed** tab of the pull request, click the **...** menu at the top of the file and choose **Edit file**.
+
+### Editing several files in one pull request
+
+A pull request can contain changes to any number of files. For example, when a new feature affects several pages, it's best to update all of them in a single pull request, so they can be reviewed and published together.
+
+Start with the first file using **Edit this page** and send in the pull request as described above. Then add the other files to the same branch in your fork, the same way as in [Coming back to your pull request](#coming-back-to-your-pull-request): navigate to each file on your branch, edit it and commit directly to the branch. Every commit is added to the same pull request.
+
+!!! note "Warning"
+    Don't use the **Edit this page** button of the site for the additional files. It always starts from the documentation repository, so GitHub puts your change on a new branch and opens a separate pull request for it.
+
 !!! note "Warning"
     Once you pull request has been merged, and the changes appeared on the live site, that branch won't be used anymore. For further changes, you need to start editing the file again from scratch.
 
