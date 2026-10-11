@@ -4,6 +4,8 @@ title: "Improving the documentation"
 
 This documentation is written and maintained by the Battery Emulator community. If you spot a mistake, find something outdated, or know a detail that is missing, you can fix it yourself, right in your browser. No software to install and no git knowledge needed.
 
+The site is based on [Material for MkDocs](https://squidfunk.github.io/mkdocs-material) which uses an enhanced version of markdown syntax.
+
 !!! info "What you need"
     A free [GitHub account](https://github.com/signup). Sign in to GitHub before you start.
 
@@ -31,12 +33,15 @@ Your changes will be saved in your fork, and from there you ask the project team
 
 ## Step 4: Make your changes
 
-The editor opens with the text of the page in Markdown format. Make the changes needed, and use the **Preview** tab for a partial syntax check.
+The editor opens with the text of the page in Markdown format. Make the changes needed, and use the **Preview** tab for a **partial** syntax check.
 
 ![Editing the page](../../images/improving-documentation-04.png)
 
 !!! note
-    GitHub's preview is close to, but not the same as, this site. Boxes like this one, image sizes and icons only show up correctly once the site is built. When unsure, look at how other pages do it and keep the existing formatting.
+    GitHub's preview is close to, but not the same as, this site. [Boxes](https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+) like this one, image sizes and icons only show up correctly once the site is built. See Material for MkDocs documentation for advanced stuff.
+
+    When unsure, look at how other pages do it and keep the existing formatting.
 
 Keep a change focused on one topic. A few small, separate changes are easier to review than one big one.
 
