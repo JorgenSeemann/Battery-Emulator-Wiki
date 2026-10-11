@@ -2,17 +2,7 @@
 title: "Stellantis Pro One"
 ---
 
-<div align="center">
-
-# 🔋 Stellantis Pro One
-
 **110 kWh · 90S · MCA Battery Platform**
-
-*Battery Emulator Compatibility Guide*
-
----
-
-</div>
 
 ## 🔵 Battery specifications
 
@@ -25,10 +15,10 @@ title: "Stellantis Pro One"
 
 ## ⚠️ Inverter power limitations
 
-> [!WARNING]
-> This battery has a relatively low voltage. The inverter's maximum output power may therefore be limited by its maximum battery input current.
+!!! warning "WARNING"
+    This battery has a relatively low voltage. The inverter's maximum output power may therefore be limited by its maximum battery input current.
 
-For example, the Solis 20K has a maximum battery input current of 50 A.
+    For example, the Solis 20K has a maximum battery input current of 50 A.
 
 | Battery voltage | Maximum current | Theoretical DC power |
 |:--:|:--:|--:|
@@ -48,10 +38,6 @@ The following vehicles are compatible with the Stellantis Pro One / MCA 110 kWh 
 - Citroën Jumper 110 kWh
 - Peugeot Boxer 110 kWh
 
----
-
-# 🔌 Connectors
-
 ## ⚡ High-voltage (HV) connector
 
 ### Capacitor requirements
@@ -63,15 +49,15 @@ The following capacitor configurations have been confirmed to work:
 - **2 × 470 µF** capacitors connected in parallel (940 µF total)
 - **1 × 1000 µF** capacitor
 
-> [!WARNING]
-> Ensure that the capacitors have a suitable voltage rating for the battery's HV system. High-voltage components can retain dangerous energy even after the battery has been disconnected.
+!!! warning "WARNING"
+    Ensure that the capacitors have a suitable voltage rating for the battery's HV system. High-voltage components can retain dangerous energy even after the battery has been disconnected.
 
 ### 🔹 Standard HV connector — 175 A
 
 This is the easiest connector to source and use. The other options are much harder to find.
 
-> [!IMPORTANT]
-> The HVIL (high-voltage interlock loop) must be properly connected.
+!!! important "IMPORTANT"
+    The HVIL (high-voltage interlock loop) must be properly connected.
 
 ![HV connector](../images/stellantis-pro-one-01.png)
 
@@ -81,8 +67,8 @@ This is the easiest connector to source and use. The other options are much hard
 
 This alternative connector can also be used if you can find one.
 
-> [!IMPORTANT]
-> The HVIL must be properly connected.
+!!! important "IMPORTANT"
+    The HVIL must be properly connected.
 
 ![Alternative HV connector](../images/stellantis-pro-one-02.png)
 
@@ -110,18 +96,6 @@ The HV connector on the right-hand side, intended for DC fast charging, **cannot
 | 22 | 12 V |
 | 24 and 25 | Connect together to close the interlock circuit |
 
----
+## 💻 Software configuration
 
-# 💻 Software configuration
-
-To use this battery, select the following battery profile in the Battery Emulator software:
-
-`Stellantis Pro One 110kWh (E-Ducato/ProMaster/Proace)`
-
----
-
-<div align="center">
-
-*Stellantis Pro One / MCA · Battery Emulator Documentation*
-
-</div>
+To use this battery, select the following battery profile in the Battery Emulator software: **Stellantis Pro One 110kWh (E-Ducato/ProMaster/Proace)**.
