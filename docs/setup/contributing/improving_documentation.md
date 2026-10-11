@@ -38,7 +38,7 @@ The editor opens with the text of the page in Markdown format. Make the changes 
 ![Editing the page](../../images/improving-documentation-04.png)
 
 !!! note
-    GitHub's preview is close to, but not the same as, this site. [Boxes](https://squidfunk.github.io/mkdocs-material/reference/admonitions) like this one, image sizes and icons only show up correctly once the site is built. See Material for MkDocs documentation for advanced stuff.
+    GitHub's preview is close to, but not the same as, this site. [Boxes](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) like this one, image sizes and icons only show up correctly once the site is built. See Material for MkDocs documentation for advanced stuff.
 
     When unsure, look at how other pages do it and keep the existing formatting.
 
