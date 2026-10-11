@@ -50,13 +50,13 @@ This example diagram shows how to connect a [LilyGo T‐CAN485](../hardware/lily
 
 ![lilygo draw](../images/nissan-leaf-e-nv200-06.png)
 
-The schematics can be found [**here**](../images/Fronius_Nissan_leaf.drawio) and can be edited via [draw.io](https://app.diagrams.net).
-
 ==========================================================
 
 ### Waveshare ESP32-S3-RS485-CAN
 
 ![lilygo draw](../images/Fronius_Nissan_leaf.jpg)
+
+The schematics can be found [**here**](../images/Fronius_Nissan_leaf.drawio) and can be edited via [draw.io](https://app.diagrams.net).
 
 Nissan's own documentation uses pin numbering on the 36-pin low-voltage connector, which does not match the molded connector on AZE0/ZE1. The connections on this diagram have been renumbered so that they do. Scroll further down for the pinout of the 22-pin connector for ZE0.
 
