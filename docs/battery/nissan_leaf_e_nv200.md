@@ -18,9 +18,9 @@ For this battery type, use the option named **Nissan LEAF battery** under the **
 
 ## Wiring diagrams 🔌
 
-The following pictures show an example of hooking up a LEAF battery to a [Fronius Gen24 inverter](/docs/inverter/fronius.md). The same diagram can be useful for planning other inverter combinations.
+The following pictures show an example of hooking up a LEAF battery to a [Fronius Gen24 inverter](../inverter/fronius.md). The same diagram can be useful for planning other inverter combinations.
 
-[Waveshare ESP32-S3-RS485-CAN](/docs/hardware/waveshare_esp32_s3_rs485_can.md) is the new recommended hardware.
+[Waveshare ESP32-S3-RS485-CAN](../hardware/waveshare_esp32_s3_rs485_can.md) is the new recommended hardware.
 
 !!! note "NOTE"
     The LEAF battery requires a 12V supply (**set to 14V**) capable of delivering at least 1.5A.
@@ -44,17 +44,15 @@ The Positive (+) wire is near the data port, and the Negative (-) wire is near t
 
 ### Low Voltage connection (control and data)
 
-This example diagram shows how to connect a [LilyGo T‐CAN485](../hardware/lilygo_t_can485.md) to a Nissan LEAF AZE0/ZE1 pack (with a Yazaki 36-pin connector), using automatic contactor control via solid-state relays, also featuring [periodic BMS reset](../setup/hardware/periodic_bms_reset.md) and an optional [equipment stop](../setup/software/equipment_stop.md) circuit.
+The example diagrams below show how to connect a [LilyGo T‐CAN485](../hardware/lilygo_t_can485.md) or a [Waveshare ESP32-S3-RS485-CAN](../hardware/waveshare_esp32_s3_rs485_can.md) to a Nissan LEAF AZE0/ZE1 pack (with a Yazaki 36-pin connector), using automatic contactor control via solid-state relays, also featuring [periodic BMS reset](../setup/hardware/periodic_bms_reset.md) and an optional [equipment stop](../setup/software/equipment_stop.md) circuit.
 
-### LilyGo T-CAN485
+#### LilyGo T-CAN485
 
 ![lilygo draw](../images/nissan-leaf-e-nv200-06.png)
 
-==========================================================
+#### Waveshare ESP32-S3-RS485-CAN
 
-### Waveshare ESP32-S3-RS485-CAN
-
-![lilygo draw](../images/Fronius_Nissan_leaf.jpg)
+![waveshare draw](../images/Fronius_Nissan_leaf.jpg)
 
 The schematics can be found [**here**](../images/Fronius_Nissan_leaf.drawio) and can be edited via [draw.io](https://app.diagrams.net).
 
@@ -89,13 +87,10 @@ Before the contactors turn on, both the inverter and the battery need to give an
 
 ## Periodic restart of BMS
 
-The BMS in the Nissan LEAF packs was not originally designed to operate 24/7 under all conditions. Over time, the SOC% will become less accurate, and under certain conditions, even the GIDS (Wh remaining) becomes confused (see [Issue 86](https://github.com/dalathegreat/Battery-Emulator/issues/86)). 
-The
-**BAT** pin can be under +12V continuously; the **IGN** pin should be the one turned off from time to time (as the wiring diagram above). 
+The BMS in the Nissan LEAF packs was not originally designed to operate 24/7 under all conditions. Over time, the SOC% will become less accurate, and under certain conditions, even the GIDS (Wh remaining) becomes confused (see [Issue 86](https://github.com/dalathegreat/Battery-Emulator/issues/86)). The **BAT** pin can be under +12V continuously; the **IGN** pin should be the one turned off from time to time (as the wiring diagram above). 
 
 See the [Periodic Reset page](../setup/hardware/periodic_bms_reset.md) for details. 
-Set **Periodic BMS reset off time** to **120 seconds** for Nissan LEAF packs. Based on empirical observations, the 30kWh (2013–2017, AZE0) pack benefits most from the **24h** period, together with the **Skip reset for one period if balancing** option enabled. 
-Changing **BMS starting sequence request** to **normal charge** may improve balancing on packs that are in good shape (small cell voltage delta over the entire SOC range you use).
+Set **Periodic BMS reset off time** to **120 seconds** for Nissan LEAF packs. Based on empirical observations, the 30kWh (2013–2017, AZE0) pack benefits most from the **24h** period, together with the **Skip reset for one period if balancing** option enabled. Changing **BMS starting sequence request** to **normal charge** may improve balancing on packs that are in good shape (small cell voltage delta over the entire SOC range you use).
 
 !!! tip "TIP"
     The LEAF BMS uses *passive* balancing: each of the 96 cells has a small resistor (shunt) that can be switched on to dissipate a small amount of energy as heat, slowly bringing fuller cells down to the level of the lowest cells.
@@ -135,7 +130,6 @@ A certain discrepancy between total charges and the AC + QC counts is normal —
 !!! tip "TIP"
     The LEAF battery is fully charged at 92-96% SOC. Use the [Rescale SOC](../setup/software/webserver_guide.md#rescale-soc) function to get a nicer-looking 100% curve! However, Nissan specifically advises against habitually charging to 100%, which adds wear; thus, for a longer lifetime, you should set **SOC max percentage** to **80** long term (during the summer, when the pack would charge to 100% quickly and then stay full almost all day).
 
-
 ## Part numbers for Nissan LEAF batteries
 
 If your battery is missing any wires/disconnect switches, here are the OEM part numbers and purchase links. Do note that it might be cheaper to source from your local scrapyard!
@@ -171,15 +165,14 @@ When searching on eBay, you may come across other cables in the Zoe that use a c
 These will *not* connect to the Leaf battery terminals.
 
 ### Alternative HV connectors 
+
 The original part number for the Nissan Leaf battery is 297A65SH1A, but a cheaper alternative for the battery HV connector can be found in scrapyards. Renault Zoe or Kangoo Batteries use the same connector as the Leaf battery. 297A22581R is the part number for both cars.
 
 The connector used is an [Aptiv HV RCS 800](https://www.ttieurope.com/content/dam/tti-europe/manufacturers/aptiv/doc/aptiv-hv-rcs-800-automotive-connectors-datasheet-specifications.pdf).
 
 ## Control wiring specifics
 
-The battery contactors draw 0.4 A each at 12 V. 
-
-**0.5 mm²** (AWG 22) is enough cable cross-section for the required current. 
+The battery contactors draw 0.4 A each at 12 V. **0.5 mm²** (AWG 22) is enough cable cross-section for the required current. 
 
 ### If you pin the connector yourself
 
