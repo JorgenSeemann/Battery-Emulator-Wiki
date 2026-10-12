@@ -215,7 +215,7 @@ The 2016-2017 30kWh LEAF battery had a software bug in the BMS that caused the r
 This will not give you any more battery capacity, though if you've swapped a bad cell with a good cell a reset is required to make use of the new capacity. Actual capacity reported in **Ah** is not affected by the reset.
 
 !!! warning "NOTE"
-    Currently, **SOH** and **Hx** reported by the BMS do not accurately reflect the real degradation of the cells during stationary storage over time. They remain stuck at the values you had when you first installed the pack. If you perform the degradation reset, it will show as 100% and stay there. However, this will widen the SOC range you can use your battery in, giving you a few kWh of usable energy back, but you'll have to carefully set your limits manually, as described further down below.
+    Currently, **SOH** and **Hx** reported by the BMS do not accurately reflect the real degradation of the cells during stationary storage over time. They remain stuck at the values you had when you first installed the pack. If you perform the degradation reset, it will show as 100% and stay there. However, this will widen the SOC range you can use your battery in, possibly giving you a few kWh of usable energy back, but you'll have to carefully set your limits manually, as described further down below.
 
 !!! info "IMPORTANT"
     The degradation reset only works on 2011-2017 (ZE0/AZE0) batteries. 
@@ -228,20 +228,6 @@ This will not give you any more battery capacity, though if you've swapped a bad
 
 To perform a proper SOH% reset, [that sticks between reboots](https://github.com/dalathegreat/Battery-Emulator/issues/900#issuecomment-3482162856), choose how to perform the following steps:
 
-#### Remotely
-
-!!! note "NOTE"
-    You need [Home Assistant](../setup/software/home_assistant.md) set up to do this remotely by triggering a BMS Reset on demand. 
-    
-Also, this can only be done remotely if only **IGN** is cut by BMS Reset and the battery is the only device on the CAN bus.
-    
-- Set **Periodic BMS reset off time** to 180 s
-- Open contactors
-- Reset battery degradation via the More Battery Info page
-- Press **Reset BMS** in Home Assistant, and wait for the 180s to pass (watch Battery Emulator main page)
-- Close contactors
-- Reboot Battery Emulator
-
 #### At the location
 
 - Open contactors
@@ -251,6 +237,18 @@ Also, this can only be done remotely if only **IGN** is cut by BMS Reset and the
 - Wait 3 minutes
 - Reconnect CAN cables
 - Restore 12V to **IGN**
+- Close contactors
+- Reboot Battery Emulator
+
+#### Remotely
+
+!!! note "NOTE"
+    This can only be done remotely if only **IGN** is cut by BMS Reset and the battery is the only device on the CAN bus.
+    
+- Set **Periodic BMS reset off time** to 180 s
+- Open contactors
+- Reset battery degradation via the More Battery Info page
+- At **Perform a BMS reset now** press **Start** and wait for the 180s to pass (watch Battery Emulator main page)
 - Close contactors
 - Reboot Battery Emulator
 
