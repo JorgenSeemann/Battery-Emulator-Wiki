@@ -34,6 +34,12 @@ If you just want to step down the wire size (from 50mm² cable to 10mm² cable),
 
 ![image](../../images/installation-guidelines-10.png)
 
+If space is an issue, you can use this [1 module 150A terminal block](https://s.click.aliexpress.com/e/_c4lHpV37):
+- 1 in (35mm²), 1 out (35mm²)
+- 1 in(35mm²), 2 out (10mm²)
+
+![image](../../images/1_module_distribution_block.jpg)
+
 ### DC Fuses
 
 #### How large fuse do I need?
@@ -60,7 +66,10 @@ Note the spread: the same 5kW load draws 33% more current at the bottom of the v
 The fuse must not be used as your current limiter. Set the inverter or Battery Emulator max discharge current *below* the fuse rating (≤80% is a good rule) so the fuse only acts on genuine faults. Fuses can either be DC Ceramic, or DC DIN-mounted fuses. Make sure the fuse you are purchasing is certified for DC and for the voltage range of your battery. 
 
 !!! warning "CAUTION"
-    Polarized DC breakers should not be used. These are only intended for solar DC, with one direction of current flow. If these are used on batteries that have bi-directional current flow, they will break. For this reason, gBat fuses are recommended!
+    
+**Polarized DC breakers should not be used**. These are only intended for solar DC, with one direction of current flow. 
+    
+If these are used on batteries that have bi-directional current flow, they will break. For this reason, fuses (fusible links) are recommended!
 
 [DF Electric PMX Fuse Holders](https://www.dfelectric.es/products/pmx-fuse-holders/)
 
@@ -72,12 +81,22 @@ Don't buy cheap products from doubtable sources unless you intend to burn your h
 
 ![image](../../images/installation-guidelines-11.png)
 
+If you want to use DC MCB Fuses, use someting like [**Schneider C60PV-DC 800VDC (A9N61660)**](https://www.se.com/be/en/product/download-pdf/A9N61660?filename=Schneider+Electric_Acti9-C60HDC-Acti9-C60PVDC_A9N61660.pdf).
+
+![image](../../images/DC_MCB_bidirectional.jpg)
+
 #### Disconnect switches
-Some countries have legislation that dictate a need for DC disconnect switches (also known as DC isolation switch). The idea behind this is that these switches will be installed in a place where first responders and firefighters can easily turn off your solar/battery combination. Check your local legislation to see if this is required in your area.
+Some countries have legislation that dictate a need for DC disconnect switches (also known as DC isolation switch). 
+
+The idea behind this is that these switches will be installed in a place where first responders and firefighters can easily turn off your solar/battery combination. Check your local legislation to see if this is required in your area.
 
 ![1170104_1_5](../../images/installation-guidelines-12.png)
 
 [IP67 Waterproof 32A 1000V Disconnect Switch](https://imopc.com/imo_uk_gbp_view/enclosed-dc-switch-ip66-6249d58eb8c4a.html)
+
+[TOMZN 4P PV DC 1200V 32A IP66](https://s.click.aliexpress.com/e/_c3oFLKJn)
+
+[DIY GO Disconnect Switch IP66 1200VDC 32A](https://s.click.aliexpress.com/e/_c4SJVDat)
 
 ### Protective earth
 The battery case **needs** to be connected to protective earth (PE). This is required for a few technical and safety reasons;
@@ -149,6 +168,7 @@ Here are some examples on how to wire up the high voltage output from the batter
 ![image](../../images/nissan-leaf-e-nv200-16.png)
 ![image](../../images/nissan-leaf-e-nv200-17.png)
 ![cabluri2](../../images/nissan-leaf-e-nv200-18.jpg)
+![emulator box](../../images/emulator_box.jpeg)
 
 Phoenix 3049408 DIN rail connectors to use with unmodified cable:
 
