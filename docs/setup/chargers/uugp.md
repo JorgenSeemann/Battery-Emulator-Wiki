@@ -8,7 +8,7 @@ The benefit of this charger is that it connects (power) directly to DC, and thus
 
 The charger connects to the BMS using MODBUS TCP, and to the DC power cables between the battery and the inverter.
 
-The manual can be found here: ../../blob/main/docs/setup/chargers/V2X%20Bidirectional%20DCDC%20EV%20Charger%20User%20Manual%20V10_260918_123745.pdf
+The manual can be found here: ![Manual](../../blob/main/docs/setup/chargers/V2X%20Bidirectional%20DCDC%20EV%20Charger%20User%20Manual%20V10_260918_123745.pdf)
 
 ![Basic connection](../../images/UUGP_princip_connection.png)
 
