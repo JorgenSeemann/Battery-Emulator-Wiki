@@ -59,11 +59,11 @@ GitHub shows an overview of your changes. Click **Create pull request** button:
 
 ![Create pull request](../../images/improving-documentation-06.png)
 
-The pull request form opens with a template already filled in. Complete it:
+The pull request form opens with a template you have to fill in. Complete it:
 
 - **Description**: what you changed and why.
-- **Related issue**: link the issue this fixes, if there is one, otherwise delete the line.
-- **Pull request in Battery Emulator**: if your change documents a software change, link that pull request here.
+- **Related issue**: link the issue this fixes, if there is one, otherwise leave empty.
+- **Pull request in Battery Emulator**: if your change documents a software change, paste the link of that pull request here.
 - **Types of changes**: tick the boxes that apply, by replacing `[ ]` with `[x]`.
 
 Then click **Create pull request** to send it in:
