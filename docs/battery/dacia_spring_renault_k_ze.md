@@ -75,7 +75,7 @@ The LV connector on the battery has the following pinout:
 
 The pin numbering is engraved on the LV connector (PT06A-12-10S)
 
-![image](../images/dacia-spring-renault-k-ze-05.png) ![image](../images/Spring_Mirrored_Pinout.png) { width="150" height="150" }
+![image](../images/dacia-spring-renault-k-ze-05.png)
 
 Try to source at least the LV connector; scrapers are happy to cut the cables and usually give them for free.
 The LV connector usually goes to scrap with the car.
