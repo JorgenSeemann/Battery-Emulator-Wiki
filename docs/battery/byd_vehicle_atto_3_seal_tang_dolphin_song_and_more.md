@@ -12,7 +12,7 @@ To get contactor closing to function, start BYD battery first, and Battery-Emula
 | :-----------: | :---------: | :----: | :------: | :-------------: | :------------: | :----: |
 | PV2 | ? | 40 kWh | 150Ah | 300.8V | 330 kg | ✅ 
 | PE4 | Seal | 61.66kWh | 150Ah | 409.6V | ? | ✅
-| ??? | Atto 3 | 50kWh | ? | ? | 330 kg | ✅ 
+| PK3 | Atto 3 (2026) | 49.92kWh | 150Ah | 332.8V | 330 kg | ✅
 | P48 | Atto 3 | 60.48kWh | 150Ah | 403.2V | 402 kg | ✅ 
 | P4S | ? | 74.8kWh | 150Ah | 499.2V | 520 kg | ✅ 
 | VD6 | Seal U DM-i | 18,32kWh | 54Ah | 339.2V | 175-181 kg | :x: (Type B LV connector)
@@ -20,7 +20,6 @@ To get contactor closing to function, start BYD battery first, and Battery-Emula
 | PE2 | Han | 85.4kWh  | 150Ah | 569.6V | 600 kg | :x: (Type B LV connector)
 | PE5 | Seal   | 82.56kWh | 150Ah | 550.4V | 580 kg | ✅ 
 | PE6 | Seal   | 82.56kWh | 150Ah | 550.4V | 580 kg | ✅ 
-| PK3 | Dolphin | 49.92kWh | 150Ah | 332.8V | 330 kg | ✅
 | P0B | Dolphin | 43.2kWh | 150Ah | 288V | 310 kg | -
 | P07 | T3     | 50.37kWh | 115Ah | 438V | 390 kg | -
 | P94 | Dolphin | 44.928kWh | 135Ah | 332.8V | ? | ✅ 
