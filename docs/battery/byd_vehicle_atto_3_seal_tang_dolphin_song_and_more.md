@@ -8,32 +8,31 @@ The code is compatible with a variety of BYD vehicle batteries. Check the produc
 
 To get contactor closing to function, start BYD battery first, and Battery-Emulator afterwards. If you start Battery-Emulator before the battery, it wont close contactors before you restart the emulator. Also make sure no FAULT events are active when trying to start, this will prevent contactor operation.
 
-|  Product Type |  Byd Model  | Energy | Capacity | Nominal voltage | Status |
-| :-----------: | :---------: | :----: | :------: | :-------------: | :----: |
-| PV2 | ? | 40 kWh | 150Ah | 300.8V | ✅ 
-| PE4 | Seal | 61.66kWh | 150Ah | 409.6V | ✅
-| ??? | Atto 3 | 50kWh | ? | ? | ✅ 
-| P48 | Atto 3 | 60.48kWh | 150Ah | 403.2V | ✅ 
-| P4S | ? | 74.8kWh | 150Ah | 499.2V | ✅ 
-| VD6 | Seal U DM-i | 18,32kWh | 54Ah | 339.2V | :x: (Type B LV connector)
-| PA4 | Tang | 86.4kWh  | 135Ah | 640V | :x: (Type B LV connector)
-| PE2 | Han | 85.4kWh  | 150Ah | 569.6V | :x: (Type B LV connector)
-| PE5 | Seal   | 82.56kWh | 150Ah | 550.4V | ✅ 
-| PE6 | Seal   | 82.56kWh | 150Ah | 550.4V | ✅ 
-| PK3 | Dolphin | 49.92kWh | 150Ah | 332.8V | ✅
-| P0B | Dolphin | 43.2kWh | 150Ah | 288V | -
-| P07 | T3     | 50.37kWh | 115Ah | 438V | -
-| P94 | Dolphin | 44.928kWh | 135Ah | 332.8V | ✅ 
-| P99 | ? | 44.928kWh | 135Ah | 320.0V | -
-| PC5B | Dolphin mini | 38.8kWh | 135Ah | 288V | :x: (Type B LV connector)
-| ? | Song Plus | 82.56kWh | 150Ah | 550.4V | ✅ 
-| PM6 | Song Plus | 87.04 kWh | 170Ah | 512.0V | ✅
-| PM6B|? | 87.04 kWh | 170Ah | 512.0V | ✅
-| PR2| Song Plus | 87.04 kWh | 170Ah | 512.0V | ?
-| PF9| Song Plus | 87.04 kWh | 170Ah | 512.0V | ?
-| PM7 | Seal U | 71.80 kWh | 170Ah | 422.4V | ✅ 
-| VM7 | Sealion 8 DM-p (AU) | 35.62 kWh | 78.4Ah | 454.4V | :x: (Type C LV connector)
-| PW4 | Seal 7 | 91.392 kWh | 170Ah | 537.6V | ✅
+|  Product Type |  Byd Model  | Energy | Capacity | Nominal voltage | Approx. weight | Status |
+| :-----------: | :---------: | :----: | :------: | :-------------: | :------------: | :----: |
+| PV2 | ? | 40 kWh | 150Ah | 300.8V | 330 kg | ✅ 
+| PE4 | Seal | 61.66kWh | 150Ah | 409.6V | ? | ✅
+| PK3 | Atto 3 (2026) | 49.92kWh | 150Ah | 332.8V | 330 kg | ✅
+| P48 | Atto 3 | 60.48kWh | 150Ah | 403.2V | 402 kg | ✅ 
+| P4S | ? | 74.8kWh | 150Ah | 499.2V | 520 kg | ✅ 
+| VD6 | Seal U DM-i | 18,32kWh | 54Ah | 339.2V | 175-181 kg | :x: (Type B LV connector)
+| PA4 | Tang | 86.4kWh  | 135Ah | 640V | 600 kg | :x: (Type B LV connector)
+| PE2 | Han | 85.4kWh  | 150Ah | 569.6V | 600 kg | :x: (Type B LV connector)
+| PE5 | Seal   | 82.56kWh | 150Ah | 550.4V | 580 kg | ✅ 
+| PE6 | Seal   | 82.56kWh | 150Ah | 550.4V | 580 kg | ✅ 
+| P0B | Dolphin | 43.2kWh | 150Ah | 288V | 310 kg | -
+| P07 | T3     | 50.37kWh | 115Ah | 438V | 390 kg | -
+| P94 | Dolphin | 44.928kWh | 135Ah | 332.8V | ? | ✅ 
+| P99 | ? | 44.928kWh | 135Ah | 320.0V | ? | -
+| PC5B | Dolphin mini | 38.8kWh | 135Ah | 288V | ? | :x: (Type B LV connector)
+| ? | Song Plus | 82.56kWh | 150Ah | 550.4V | 580 kg | ✅ 
+| PM6 | Song Plus | 87.04 kWh | 170Ah | 512.0V | 580 kg | ✅
+| PM6B|? | 87.04 kWh | 170Ah | 512.0V | 580 kg | ✅
+| PR2| Song Plus | 87.04 kWh | 170Ah | 512.0V | 580 kg | ?
+| PF9| Song Plus | 87.04 kWh | 170Ah | 512.0V | 580 kg | ?
+| PM7 | Seal U | 71.80 kWh | 170Ah | 422.4V | 488-513 kg | ✅ 
+| VM7 | Sealion 8 DM-p (AU) | 35.62 kWh | 78.4Ah | 454.4V | 266 kg | :x: (Type C LV connector)
+| PW4 | Seal 7 | 91.392 kWh | 170Ah | 537.6V | 637 kg | ✅
 
 Confirmed working BYD Seal 60kWh battery example sticker:
 

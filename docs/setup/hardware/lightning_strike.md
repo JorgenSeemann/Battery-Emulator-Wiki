@@ -90,3 +90,4 @@ Example of CAN isolator in use, and PE connections between elements:
 ## See also
 
 - [Lots of useful Safety Earth references here](https://www.sciencedirect.com/topics/engineering/safety-earth)
+- [BEAMA Guide to Surge Protection Devices (SPDs)](https://www.beama.org.uk/resourceLibrary/beama-surge-protection-guide-.html)
